@@ -2,15 +2,19 @@ import org.junit.Test;
 
 import java.io.File;
 import java.net.MalformedURLException;
+import java.util.Arrays;
+
+import static junit.framework.TestCase.assertTrue;
 
 public class MyTest {
 
     @Test
     public void test() throws InterruptedException, MalformedURLException {
 
-        File knimeDir = new File("knime");
+        System.out.println(Arrays.toString(new File(".").list()));
 
-        //            assertTrue(knimeDir.exists());
+        File knimeDir = new File("knime_3.7.0");
+        assertTrue("knime_3.7.0 exists", knimeDir.exists());
 //
 //            String childPath = knimeDir.listFiles()[0].getName();
 //            final String exe = "knime/" + childPath + (SystemUtils.IS_OS_WINDOWS ? "/knime.exe" : "/knime");
