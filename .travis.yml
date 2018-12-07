@@ -5,7 +5,6 @@ before_script:
 - tar -xzf knime-latest-linux.gtk.x86_64.tar.gz
 - knime_3.7.0/knime -application org.eclipse.equinox.p2.director -repository https://update.knime.org/analytics-platform/3.6,https://dl.bintray.com/silebat/fsklab_icpmf -installIU de.bund.bfr.knime.fsklab.feature.feature.group
 - knime_3.7.0/knime -application org.eclipse.equinox.p2.director -lir > plugins.txt
-- export PATH=$PATH:$PWD/knime_3.7.0/
 
 after_script:
 - rm knime-latest-linux.gtk.x86_64.tar.gz
