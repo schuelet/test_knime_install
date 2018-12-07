@@ -1,5 +1,4 @@
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 import org.rauschig.jarchivelib.Archiver;
@@ -39,7 +38,7 @@ public class MyTest {
             final String director = "-application org.eclipse.equinox.p2.director";
 
             // Install FSK-Lab
-            ProcessBuilder pb = new ProcessBuilder(exe, "-nosplash", director, "-repository https://dl.bintray.com/silebat/fsklab_icpmf", "-installIU de.bund.bfr.knime.fsklab.feature.feature.group");
+            ProcessBuilder pb = new ProcessBuilder(exe, "-nosplash", director, "https://update.knime.org/analytics-platform/3.6,https://dl.bintray.com/silebat/fsklab_icpmf", "-installIU de.bund.bfr.knime.fsklab.feature.feature.group");
             Process p = pb.start();
             p.waitFor();
             String errors = IOUtils.toString(p.getErrorStream());
