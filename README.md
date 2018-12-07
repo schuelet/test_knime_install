@@ -1,4 +1,4 @@
-# Test script for FSK-Lab update site [![Build Status](https://travis-ci.org/silebat/testInstall.svg?branch=master)](https://travis-ci.org/silebat/testInstall)
+# Test script for FSK-Lab update site [![Build Status](https://travis-ci.org/SiLeBAT/testInstall.svg?branch=master)](https://travis-ci.org/SiLeBAT/testInstall)
 
 Test the installation of FSK-Lab from the update site https://db.bintray.com/silebat/fsklab_icpmf
 
