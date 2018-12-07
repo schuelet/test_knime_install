@@ -13,8 +13,8 @@ public class MyTest {
 
         System.out.println(Arrays.toString(new File(".").list()));
 
-        File knimeDir = new File("knime_3.7.0");
-        assertTrue("knime_3.7.0 exists", knimeDir.exists());
+        File pluginList = new File("plugins.txt");
+        assertTrue("Plugin list exists", pluginList.exists());
 //
 //            String childPath = knimeDir.listFiles()[0].getName();
 //            final String exe = "knime/" + childPath + (SystemUtils.IS_OS_WINDOWS ? "/knime.exe" : "/knime");
