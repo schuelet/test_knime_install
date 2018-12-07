@@ -11,7 +11,7 @@ import static org.junit.Assert.fail;
 public class MyTest {
 
     @Test
-    public void test() throws InterruptedException, IOException {
+    public void test() throws IOException {
 
         File pluginList = new File("plugins.txt");
 
