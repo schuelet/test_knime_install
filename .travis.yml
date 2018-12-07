@@ -1,11 +1,11 @@
 language: java
 dist: trusty
 before_script:
-- wget -v https://download.knime.org/analytics-platform/linux/knime-latest-linux.gtk.x86_64.tar.gz
-- tar -xzf knime-latest-linux.gtk.x86_64.tar.gz
-- knime_3.7.0/knime -application org.eclipse.equinox.p2.director -repository https://update.knime.org/analytics-platform/3.6,https://dl.bintray.com/silebat/fsklab_icpmf -installIU de.bund.bfr.knime.fsklab.feature.feature.group
-- knime_3.7.0/knime -application org.eclipse.equinox.p2.director -lir > plugins.txt
+- wget -v http://download.knime.org/analytics-platform/linux/knime_3.6.2.linux.gtk.x86_64.tar.gz
+- tar -xzf knime_3.6.2.linux.gtk.x86_64.tar.gz
+- knime_3.6.2/knime -application org.eclipse.equinox.p2.director -repository https://update.knime.org/analytics-platform/3.6,https://dl.bintray.com/silebat/fsklab_icpmf -installIU de.bund.bfr.knime.fsklab.feature.feature.group
+- knime_3.6.2/knime -application org.eclipse.equinox.p2.director -lir > plugins.txt
 
 after_script:
-- rm knime-latest-linux.gtk.x86_64.tar.gz
+- rm knime_3.6.2.linux.gtk.x86_64.tar.gz
 - rm -Rf knime_3.7.0
