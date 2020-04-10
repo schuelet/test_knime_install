@@ -22,5 +22,5 @@ before_script:
 - knime_3.7.2/knime -application org.eclipse.equinox.p2.director -repository "$KNIME37,$NEW_FSK" -installIU de.bund.bfr.knime.fsklab.feature.feature.group
 - knime_3.7.2/knime -application org.eclipse.equinox.p2.director -lir
 -
-- echo "CLEANING KNIME"
-- rm -Rf knime_3.7.2
+- echo "Save list of installed plugins for unittest"
+- knime_3.7.2/knime -application org.eclipse.equinox.p2.director -lir > "plugins.txt"
