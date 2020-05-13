@@ -11,4 +11,4 @@ os: windows
 language: bash
 
 script:
-   - bash script.sh
+   - ./script.sh
