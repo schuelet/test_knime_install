@@ -10,8 +10,8 @@
 os: windows
 language: bash
 
-#script:
-   
+script:
+- bash script.sh
 
 before_install:
 - chmod +x script.sh
