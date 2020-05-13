@@ -45,5 +45,3 @@ echo "REMOVE NEW FSK TO TEST UPDATE FROM OLDER VERSION"
  
 rm -r knime_3.7.2 
 rm -r wf 
-
-
