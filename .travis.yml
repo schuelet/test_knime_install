@@ -1,8 +1,14 @@
-os: windows
-language: shell
+#os: windows
+#language: shell
 
-install:
-   - PowerShell -Command 'Set-ExecutionPolicy -ExecutionPolicy RemoteSigned'
+#install:
+#   - PowerShell -Command 'Set-ExecutionPolicy -ExecutionPolicy RemoteSigned'
    
+#script:
+#  - PowerShell -File deploy_win.ps1
+
+os: windows
+language: bash
+
 script:
-   - PowerShell -File deploy_win.ps1
+   - bash script.sh
