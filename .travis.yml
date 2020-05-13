@@ -27,7 +27,7 @@ script:
 
 
 - KNIME37="https://update.knime.org/analytics-platform/3.7"
-#$OLD_FSK="https://dl.bintray.com/silebat/fsklab_test"
+- $OLD_FSK="https://dl.bintray.com/silebat/test2"
 #$NEW_FSK="file:$TRAVIS_BUILD_DIR/de.bund.bfr.knime.update/target/repository"
 #$NEW_FSK="file:/C:/Arbeit/git/FSK-Lab_290420/de.bund.bfr.knime.update/target/repository"
 - NEW_FSK=$OLD_FSK
