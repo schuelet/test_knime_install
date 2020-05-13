@@ -3,6 +3,7 @@ KNIME_FILE="knime_3.7.2.win32.win32.x86_64.zip"
 
 wget -q "http://download.knime.org/analytics-platform/win/$KNIME_FILE" 
 unzip -q "$KNIME_FILE" 
+echo $KNIME_FILE
 rm $KNIME_FILE
 
 WF_ZIP="wf.zip"
