@@ -7,7 +7,7 @@
 #script:
 #  - PowerShell -File deploy_win.ps1
 
-os: osx
+os: windows
 language: bash
 
 script:
@@ -42,7 +42,7 @@ script:
   for WF in $WF_FILES
     do
       KNIME_OUT=$(knime_3.7.2/knime -nosplash -reset -nosave -application org.knime.product.KNIME_BATCH_APPLICATION -workflowFile="$WF" --launcher.suppressErrors)
-      if[["$KNIME_OUT" != *"$KNIME_SUCCESS"* ]]; then echo "Workflow failed";exit1; else echos "3.7.2 Workflow successful on fresh install"; fi
+      if[["$KNIME_OUT" != *"$KNIME_SUCCESS"* ]]; then echo "Workflow failed";exit1; else echo "3.7.2 Workflow successful on fresh install"; fi
       rm outfile.table
     done  
  
